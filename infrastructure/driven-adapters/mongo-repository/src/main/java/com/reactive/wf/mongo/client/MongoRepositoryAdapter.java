@@ -21,7 +21,7 @@ public class MongoRepositoryAdapter
          *  super(repository, mapper, d -> mapper.mapBuilder(d,ObjectModel.ObjectModelBuilder.class).build());
          *  Or using mapper.map with the class of the object model
          */
-        super(repository, mapper, d -> mapper.mapBuilder(d, Client.ClientBuilder.class).build());
+        super(repository, mapper, d -> mapper.map(d, Client.class));
     }
 
     @Override
