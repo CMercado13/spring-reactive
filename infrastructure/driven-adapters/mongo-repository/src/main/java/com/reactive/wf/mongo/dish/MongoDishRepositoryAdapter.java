@@ -16,11 +16,11 @@ import java.util.stream.Collectors;
 
 @Repository
 @Slf4j
-public class MongoRepositoryAdapter
+public class MongoDishRepositoryAdapter
         extends AdapterOperations<Dish, DishDB, String, MongoDishDBRepository>
         implements DishGateway, PageSupportGateway<Dish> {
 
-    public MongoRepositoryAdapter(MongoDishDBRepository repository, ObjectMapper mapper) {
+    public MongoDishRepositoryAdapter(MongoDishDBRepository repository, ObjectMapper mapper) {
         /**
          *  Could be use mapper.mapBuilder if your domain model implement builder pattern
          *  super(repository, mapper, d -> mapper.mapBuilder(d,ObjectModel.ObjectModelBuilder.class).build());

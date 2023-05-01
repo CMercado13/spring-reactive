@@ -1,14 +1,12 @@
 package com.reactive.wf.model.dish;
 
-import lombok.Builder;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-//import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
 
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder(toBuilder = true)
 public class Dish {
 

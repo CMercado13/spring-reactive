@@ -11,11 +11,11 @@ import reactor.core.publisher.Mono;
 
 @Repository
 @Slf4j
-public class MongoRepositoryAdapter
+public class MongoClientRepositoryAdapter
         extends AdapterOperations<Client, ClientDB, String, MongoClientDBRepository>
         implements ClientGateway {
 
-    public MongoRepositoryAdapter(MongoClientDBRepository repository, ObjectMapper mapper) {
+    public MongoClientRepositoryAdapter(MongoClientDBRepository repository, ObjectMapper mapper) {
         /**
          *  Could be use mapper.mapBuilder if your domain model implement builder pattern
          *  super(repository, mapper, d -> mapper.mapBuilder(d,ObjectModel.ObjectModelBuilder.class).build());
